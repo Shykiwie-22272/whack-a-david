@@ -7,7 +7,7 @@
             "runtimeArgs": [
                 "--remote-debugging-port=9222"
             ],
-            "url": "https://github.com/Shykiwie-22272/whack-a-david.git",
+            "url": "https://shykiwie-22272.github.io/whack-a-david/",
             "presentation": {
                 "hidden": false
             }
@@ -16,7 +16,7 @@
             "type": "vscode-edge-devtools.debug",
             "name": "Open Edge DevTools",
             "request": "attach",
-            "url": "https://github.com/Shykiwie-22272/whack-a-david.git",
+            "url": "https://shykiwie-22272.github.io/whack-a-david/",
             "presentation": {
                 "hidden": false
             }
