@@ -19,7 +19,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Pixelify Sans', bold 700;
+    font-family: 'Pixelify Sans', Bold 700;
     background-color: #f0f0f0;
     color: #333;
     text-align: center;
@@ -90,7 +90,7 @@ h2 {
 }
 
 #start {
-    font-family: 'Pixelify Sans', bold 700;
+    font-family: 'Pixelify Sans', Bold 700;
     display: inline-block;
     text-decoration: none;
     border: 0;
