@@ -1,4 +1,4 @@
-const holes = document.querySelector('.hole');
+const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
 const button = document.querySelector('#start');
