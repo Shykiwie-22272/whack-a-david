@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Pixelify+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
 
 *, *:before, *:after {
     -webkit-box-sizing: inherit;
@@ -85,7 +85,7 @@ h2 {
     transition: all 0.4s;
 }
 
-.hole.up mole {
+.hole.up .mole {
     top: 0;
 }
 
