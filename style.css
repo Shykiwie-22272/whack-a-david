@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+/*Imports Pixelify font from Google Fonts, available for use
+in the page*/
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 /*This applies to following styles to all elements
 simulated-elements, sets box-sizing property to inherit
 ensures consistent box model behaviour to all elements*/
@@ -12,8 +15,10 @@ html {
     font-size: 10px;
 }
 
+/*Styles apply to the html element*/
+
 body {
-    background-image: url('/whack-a-david/images/Bat.png');
+    background-image: url('whack-a-david/images/Bat.png');
     padding: 0;
     margin: 0;
     font-family: 'Pixelify Sans';
@@ -22,6 +27,8 @@ body {
     text-align: center;
 }
 
+/*Styles apply to the body element*/
+
 h1 {
     font-size: 150px;
     line-height: 1;
@@ -29,11 +36,15 @@ h1 {
     color: black;
 }
 
+/*Styles apply to the h1 element*/
+
 h2 {
     font-size: 48px;
     color: black;
     margin: 32px;
 }
+
+/*Styles apply to the h2 element*/
 
 .score {
     background-color: #2F0E12;
@@ -43,8 +54,10 @@ h2 {
     color: #EBC4BF
 }
 
+/*Styles apply to elements with class ".score"*/
+
 .game {
-    cursor: url('./images/Bat.png'), auto;
+    cursor: url('images/Bat.png'), auto;
     border: 2px dashed black;
     background-color:#333;
     width: 600px;
@@ -56,8 +69,10 @@ h2 {
     margin: 0 auto;
 }
 
+/*Styles apply to elements with class ".game"*/
+
 .game.clicked {
-    cursor: url('./images/Bat_hit.png'), auto;
+    cursor: url('images/Bat_hit.png'), auto;
 }
 
 .hole {
@@ -68,9 +83,11 @@ h2 {
     height: 150px;
 }
 
+/*Styles apply to elements with class ".hole"*/
+
 .hole:after {
     display: block;
-    background: url('./images/Hole1.png') bottom center no-repeat;
+    background: url('images/Hole1.png') bottom center no-repeat;
     content: '';
     width: 100%;
     height: 70px;
@@ -80,8 +97,7 @@ h2 {
 }
 
 .mole {
-    background-color: lightblue;
-    background: url('./images/David.png') bottom center no-repeat;
+    background: url('images/David.png') bottom center no-repeat;
     background-size: 60%;
     position: absolute;
     top: 100%;
@@ -90,9 +106,15 @@ h2 {
     transition: all 0.4s;
 }
 
+/*Styles apply to elements with class ".mole"*/
+
 .hole.up .mole {
     top: 0;
 }
+
+/*Style applied to mole elements within holes 
+that have the class "up". This indicates 
+the mole is in the "up" state*/
 
 #start {
     font-family: 'Pixelify Sans';
@@ -114,3 +136,6 @@ h2 {
     transform: scale(1.08);
     box-shadow:  0 0 15px #AE7467;
 }
+
+/*Styles apply to element with id "start" and when hover state
+(When the mouse hovers over the start button)*/

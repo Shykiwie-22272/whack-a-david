@@ -19,6 +19,8 @@ function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
 
+/* Generates random time between min & max milliseconds */
+
 
 function randomHole(holes) {
     const idx = Math.floor(Math.random() * holes.length);
@@ -26,7 +28,6 @@ function randomHole(holes) {
 
 
     if(hole === lastHole) {
-        console.log('Same one');
         return randomHole(holes);
     }
 
@@ -34,6 +35,9 @@ function randomHole(holes) {
     lastHole = hole;
     return hole;
 }
+
+/* Randomly selects a hole from the list of holes
+ensures the same hole doesn't appear again */
 
 
 function peep() {
@@ -45,6 +49,10 @@ function peep() {
         if(!timeUp) peep();
     }, time);
 }
+
+/* Causes a mole to pop up randomly from a hole
+for a random amount of time and there's a chance
+you could click on the same mole twice */
 
 
 function startGame() {
@@ -60,6 +68,8 @@ function startGame() {
     }, 10000);
 }
 
+/* Resets the game, hides the start button, and starts the game by calling the peep() function. 
+After a fixed time (10 seconds), it ends the game and displays a "Try again?" button */
 
 function bonk(e) {
     if(!e.isTrusted) return;
@@ -67,6 +77,9 @@ function bonk(e) {
     this.classList.remove('up');
     scoreBoard.textContent = score;
 }
+
+/* Handles the "bonking" when the mole is clicked
+the score goes up */
 
 
 moles.forEach(mole => mole.addEventListener('click', bonk));

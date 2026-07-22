@@ -11,13 +11,21 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
         <!--Ensures that page adapts correctly to different device screen sizes-->
         <title>Whack-A-David</title>
+        <!--Title of web page, appears on browser title bar/tab-->
         <link rel = "stylesheet" href = "style.css"/>
+        <!--Links an external CSS file (style.css) to HTML doc, used to style content
+        of the page-->
     </head>
     <body>
         <h1>Whack-A-David</h1>
         <h2>Score: <span class = "score">0</span></h2>
+        <!--Display score of the game, with score of 0. The score <span> element in
+            the class "score" in CSS or Js file-->
         <button id = "start" onClick = "startGame()">Start</button>
+        <!--Button element used to start game, id of "start" and an onClick event
+        handler that calls the JavaScript function startGame() when clicked-->
         <div class ="game">
+            <!--Contains the game elements ("hole", "mole")-->
             <div class = "hole hole1">
                 <div class = "mole"></div>
             </div>
@@ -38,5 +46,7 @@
             </div>
         </div>
             <script src = "script.js"></script>
+            <!--Links to an external JavaScript file (script.js) to HTML doc,
+            JS code for necessary game interaction and funtionality-->
     </body>
 </html>
