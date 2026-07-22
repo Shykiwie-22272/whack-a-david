@@ -2,10 +2,18 @@ const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
 const button = document.querySelector('#start');
+const gameArea = document.querySelector('.game');
 let lastHole;
 let timeUp = false;
 let score = 0;
 
+gameArea.addEventListener('mousedown', () => {
+    gameArea.classList.add('clicked');
+});
+
+gameArea.addEventListener('mouseup', () => {
+    gameArea.classList.remove('clicked');
+});
 
 function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);

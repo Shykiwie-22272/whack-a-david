@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
 
 *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
 /*This applies to following styles to all elements
 simulated-elements, sets box-sizing property to inherit
-ensures consistent box model behaviour to al elements*/
+ensures consistent box model behaviour to all elements*/
 
 html {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 10px;
 }
@@ -42,20 +38,24 @@ h2 {
     background-color: #2F0E12;
     padding: 0 30px;
     line-height: 1;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
     color: #EBC4BF
 }
 
 .game {
+    cursor: url('./images/Bat.png'), auto;
+    border: 2px dashed black;
     width: 600px;
     height: 400px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;  /*modern flexbox*/
+    flex-wrap: wrap;  /* allows wrapping of child elements*/
+    justify-content: center;  /*horizontal alignment*/
+    align-items: center;  /*vertical alignment*/
     margin: 0 auto;
+}
+
+.game.clicked {
+    cursor: url('./images/Bat_hit.png'), auto;
 }
 
 .hole {
@@ -100,8 +100,12 @@ h2 {
     padding: 10px 20px;
     cursor: pointer;
     margin: 10px;
+
+    /* Animation to make the button change*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #start:hover {
-    opacity: 0.8;
+    transform: scale(1.08);
+    box-shadow:  0 0 15px #AE7467;
 }
