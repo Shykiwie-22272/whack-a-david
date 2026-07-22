@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    background-image: url('/whack-a-david/images/Bat.png');
     padding: 0;
     margin: 0;
     font-family: 'Pixelify Sans';
@@ -45,6 +46,7 @@ h2 {
 .game {
     cursor: url('./images/Bat.png'), auto;
     border: 2px dashed black;
+    background-color:#333;
     width: 600px;
     height: 400px;
     display: flex;  /*modern flexbox*/
@@ -59,9 +61,11 @@ h2 {
 }
 
 .hole {
+    background-color: pink;
     flex: 1 0 33.33%;
     overflow: hidden;
     position: relative;
+    height: 150px;
 }
 
 .hole:after {
@@ -76,6 +80,7 @@ h2 {
 }
 
 .mole {
+    background-color: lightblue;
     background: url('./images/David.png') bottom center no-repeat;
     background-size: 60%;
     position: absolute;
