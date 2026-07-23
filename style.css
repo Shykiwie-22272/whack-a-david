@@ -22,7 +22,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Pixelify Sans';
-    background-color: #f0f0f0;
+    background: url('images/HTP-bg.png');
+    background-size: cover;
     color: #333;
     text-align: center;
 }
@@ -138,4 +139,4 @@ the mole is in the "up" state*/
 }
 
 /*Styles apply to element with id "start" and when hover state
-(When the mouse hovers over the start button)*/
+(When the mouse hovers over the start button)*
